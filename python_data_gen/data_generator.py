@@ -9,7 +9,7 @@ def generate_vaell_customers(n=100):    # 6. Defines a function to create 'n' nu
     customers = []                      # 7. Creates an empty list to hold our raw data particles.
     
     for _ in range(n):                  # 8. Starts a loop that runs 'n' times.
-        # 9. We create a dictionary representing one 'Human' customer at Vaell Inc.
+        # 9. Create a dictionary representing one 'Human' customer at Vaell Inc.
         user = {
             "user_id": fake.uuid4(),    # 10. Generates a unique digital fingerprint for the user.
             "full_name": fake.name(),   # 11. Assigns a realistic name (PII).
