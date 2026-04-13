@@ -48,7 +48,7 @@ I utilized a weighted **Risk Score** to prioritize security response.
 > [!NOTE]
 > The formula below weighs behavioral density (70%) against infrastructure concentration (30%):
 
-$$Risk\_Score = ([Fraud\ Rate\ \%] \times 0.7) + (IP\_Concentration \times 0.3)$$
+$$\text{Risk\_Score} = (\text{Fraud Rate \%} \times 0.7) + (\text{IP Concentration} \times 0.3)$$
 
 * **`Fraud Rate %`**: A custom measure calculating infection density within specific account tiers.
 * **`IP Concentration`**: A metric identifying the "Mothership" source of coordinated attacks.
