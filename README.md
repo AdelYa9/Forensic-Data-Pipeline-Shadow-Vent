@@ -17,14 +17,13 @@ Vaell Inc. identified a coordinated "Phantom Leak" targeting high-liquidity **El
 ### Baseline vs. Forensic View
 In the general population, fraud appeared negligible (<1%). However, by isolating the **Elite Tier**, the "Shadow" cluster became undeniable.
 
-> [!IMPORTANT]
-> **The Behavioral Signature:** 100% of synthetic accounts displayed a static session duration of exactly **12.0 seconds** (Zero-Jitter).
-> **The Infrastructure Nexus:** A Many-to-One IP relationship where 20 unique "Elite" IDs shared a single originating IP address.
+**The Behavioral Signature:** 100% of synthetic accounts displayed a static session duration of exactly **12.0 seconds** (Zero-Jitter).  
+**The Infrastructure Nexus:** A Many-to-One IP relationship where 20 unique "Elite" IDs shared a single originating IP address.
 
-![Baseline View](visualizations/dashboard_unfiltered.png)
+![Baseline View](./visualizations/dashboard_unfiltered.png)
 *Figure 1: General population metrics showing healthy growth.*
 
-![Forensic View](visualizations/dashboard_filtered.png)
+![Forensic View](./visualizations/dashboard_filtered.png)
 *Figure 2: Isolated view of the Elite Tier attack vector.*
 
 ---
@@ -44,7 +43,10 @@ Rather than passive reporting, I engineered an **Automated Reflex** using a Post
 ---
 
 ## 📊 Advanced Analytics (DAX)
-I utilized a weighted **Risk Score** to prioritize security response:
+I utilized a weighted **Risk Score** to prioritize security response. 
+
+> [!NOTE]
+> The formula below weighs behavioral density (70%) against infrastructure concentration (30%):
 
 $$Risk\_Score = ([Fraud\ Rate\ \%] \times 0.7) + (IP\_Concentration \times 0.3)$$
 
@@ -56,7 +58,8 @@ $$Risk\_Score = ([Fraud\ Rate\ \%] \times 0.7) + (IP\_Concentration \times 0.3)$
 ## 📂 Repository Structure
 ```text
 ├── python_data_gen/
-│   └── data_generator.py      # Adversarial data generation script
+│   ├── data_generator.py      # Adversarial data generation script
+│   └── loader.py              # Automated Ingestion utility
 ├── sql_scripts/
 │   └── architecture.sql       # Star Schema DDL & "Vent" Trigger logic
 ├── visualizations/
