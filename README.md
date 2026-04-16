@@ -59,10 +59,10 @@ $$\text{Risk Score} = (\text{Fraud Rate \%} \times 0.7) + (\text{IP Concentratio
 ```text
 ├── python_data_gen/
 │   ├── data_generator.py      # Adversarial data generation script
-│   └── loader.py              # Automated Ingestion utility
+│   └── data_loader.py              # Automated Ingestion utility
 ├── sql_scripts/
 │   └── architecture.sql       # Star Schema DDL & "Vent" Trigger logic
 ├── visualizations/
-│   ├── dashboard_unfiltered.png
-│   └── dashboard_filtered.png # Forensic Power BI exports
+│   ├── unfiltered_report.png
+│   └── filtered_report.png # Forensic Power BI exports
 └── README.md                  # Project Documentation
