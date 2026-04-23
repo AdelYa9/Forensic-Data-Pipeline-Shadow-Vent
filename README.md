@@ -63,6 +63,6 @@ $$\text{Risk Score} = (\text{Fraud Rate \%} \times 0.7) + (\text{IP Concentratio
 ├── sql_scripts/
 │   └── architecture.sql       # Star Schema DDL & "Vent" Trigger logic
 ├── visualizations/
-│   ├── unfiltered_report.png
-│   └── filtered_report.png # Forensic Power BI exports
+│   ├── unfiltered_Report.png
+│   └── Filtered_Report.png # Forensic Power BI exports
 └── README.md                  # Project Documentation
