@@ -20,7 +20,7 @@ In the general population, fraud appeared negligible (<1%). However, by isolatin
 **The Behavioral Signature:** 100% of synthetic accounts displayed a static session duration of exactly **12.0 seconds** (Zero-Jitter).  
 **The Infrastructure Nexus:** A Many-to-One IP relationship where 20 unique "Elite" IDs shared a single originating IP address.
 
-![Baseline View](./visualizations/Unfiltered_Report.png)
+![Baseline View](./visualizations/unfiltered_Report.png)
 *Figure 1: General population metrics showing healthy growth.*
 
 ![Forensic View](./visualizations/Filtered_Report.png)
